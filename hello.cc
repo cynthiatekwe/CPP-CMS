@@ -16,9 +16,16 @@ public:
 void hello::main(std::string /*url*/)  
 {  
     response().out() <<  
-        "<html>\n"  
-        "<body bgcolor='navy'>\n"  
-        "  <h1>Hello World</h1>\n"  
+        "<html>\n" 
+        "<head>\n"
+        "<title> First C++ Web Application</title>\n" 
+        "<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>"  
+        "</head>\n"  
+        "<body>\n"  
+        "<div class='container' style='background-color: #1D8176;'>\n"
+        "<h1>My First C++ Web Application</h1>\n"
+        "<p>This is some text.</p>\n"
+        "</div>\n" 
         "</body>\n"  
         "</html>\n";  
 }  
@@ -27,9 +34,7 @@ int main(int argc,char ** argv)
 	std::cout << "Server running at 127.0.0.1:9000....." << std::endl;
     try {  
         cppcms::service srv(argc,argv);
-        srv.applications_pool().mount(  
-  cppcms::applications_factory<hello>()  
-); 
+        srv.applications_pool().mount(cppcms::applications_factory<hello>()); 
 
     srv.run();  
 }  
