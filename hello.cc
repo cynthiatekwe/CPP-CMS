@@ -23,8 +23,8 @@ void hello::main(std::string /*url*/)
         "</head>\n"  
         "<body>\n"  
         "<div class='container' style='background-color: #1D8176;'>\n"
-        "<h1>My First C++ Web Application</h1>\n"
-        "<p>This is some text.</p>\n"
+        "<h1>My C++ Web Search Engine</h1>\n"
+        "<input type='text' style='width: 474px;height: 44px;' placeholder='Enter Search item here'></text>  <a href='#'' class='btn btn-info btn-lg'><span class='glyphicon glyphicon-search'></span> Search</a>\n"
         "</div>\n" 
         "</body>\n"  
         "</html>\n";  
