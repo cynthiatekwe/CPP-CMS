@@ -23,9 +23,17 @@ void hello::main(std::string /*url*/)
         "</head>\n"  
         "<body>\n"  
         "<div class='container' style='background-color: #1D8176;'>\n"
-        "<h1>My C++ Web Search Engine</h1>\n"
+        "<h1>C++ Web Search Engine</h1>\n"
         "<input type='text' style='width: 474px;height: 44px;' placeholder='Enter Search item here'></text>  <a href='#'' class='btn btn-info btn-lg'><span class='glyphicon glyphicon-search'></span> Search</a>\n"
         "</div>\n" 
+        "<br><br>"
+        "<div class='container' style='background-color: #1D8176;height:450px;background-image :url('')'>\n"
+        "<img src=''>"
+        "</div>\n"
+         "<br>"
+        "<div class='container footer navbar-fixed-bottom' style='background-color: #1D8176;height:50px;background-image :url('')'>\n"
+        
+        "</div>\n"
         "</body>\n"  
         "</html>\n";  
 }  
