@@ -21,7 +21,7 @@ void hello::main(std::string /*url*/)
         "<title> First C++ Web Application</title>\n" 
         "<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>"  
         "</head>\n"  
-        "<body>\n"  
+        "<body style='background-color: #283838;'>\n"  
         "<div class='container' style='background-color: #1D8176;'>\n"
         "<h1>C++ Web Search Engine</h1>\n"
         "<input type='text' style='width: 474px;height: 44px;' placeholder='Enter Search item here'></text>  <a href='#'' class='btn btn-info btn-lg'><span class='glyphicon glyphicon-search'></span> Search</a>\n"
@@ -32,7 +32,7 @@ void hello::main(std::string /*url*/)
         "</div>\n"
          "<br>"
         "<div class='container footer navbar-fixed-bottom' style='background-color: #1D8176;height:50px;background-image :url('')'>\n"
-        
+        "<p> C++ Web Application 2015  <h6>CPPCMS </h6> </p>"
         "</div>\n"
         "</body>\n"  
         "</html>\n";  
