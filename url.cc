@@ -19,4 +19,21 @@ public:
 	
 };
 
+void urlex::main(std::string ref){
 
+}
+
+int main(int argc, char** argv){
+	try{
+		cppcms::service srv(argc, argv);
+		srv.applications_pool().mount(
+			cppcms::applications_factory<urlex>()
+			);
+		srv.run();
+
+	}catch(std::exception ex){
+		std::cerr << ex.what() << std::endl;
+	}
+
+	return 0;
+}
