@@ -40,6 +40,15 @@ public:
 			    response().out() << "<a href='" << url("/") << "'>Go back</a>";  
 			} 
 
+		void welcome()  
+			{  
+			    response().out() <<  
+			       "<h1> Welcome To Page with links </h1>\n"  
+			       "<a href='" << url("/number",1)  << "'>1</a><br>\n"  
+			       "<a href='" << url("/number",15) << "'>15</a><br>\n"  
+			       "<a href='" << url("/smile") << "' >:-)</a><br>\n";  
+			} 
+
 
 	virtual void main(std::string ref);
 	
