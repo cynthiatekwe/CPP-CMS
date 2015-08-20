@@ -8,44 +8,17 @@ bootstrap class styles.
     @Date   : August 2015
 */
 
-#include <cppcms/application.h>
+/*#include <cppcms/application.h>
 #include <cppcms/applications_pool.h>
 #include <cppcms/service.h>
-#include <cppcms/http_response.h>
+#include <cppcms/http_response.h>*/
 #include <iostream>
+#include "content.h"
 
-class temp : public cppcms::application
-{
-public:
-    temp(cppcms::service &srv) : cppcms::application(srv)
-    {
-
-    }
-
-    virtual void main(std::string ref);
-
-};
-
-void temp::main(std::string ref)
-{
-    response().out() << "<html>\n"
-                        "<head>\n"
-                        "<title> template Tutorial </title>\n"
-                        "<body bgcolor='navy'>\n"
-                        "</body>\n"
-                        "</head>\n"
-                        "</html>\n";
-}
-
-int main(int argc,char ** argv)
-{
-    try{
-        cppcms::service srv(argc,argv);
-        srv.applications_pool().mount(
-            cppcms::applications_factory<temp>()
-            );
-        srv.run();
-    }catch(std::exception const &ex){
-std::cerr << ex.what() << std::endl;
-    }
-}
+virtual void main(std::string /*url*/)  
+{  
+    content::message c;  
+    c.text=">>>Hello<<<"; 
+    c.Author="Dario"; 
+    render("message",c);  
+} 
