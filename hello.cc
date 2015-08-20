@@ -1,3 +1,14 @@
+/*
+This file contains code for the hello world cppcms tutorial with
+bootstrap integration. It creates a well styled page using 
+bootstrap class styles.
+
+    @file : hello.cc
+    @Author : Delveri Munang
+    @Date   : August 2015
+*/
+
+
 #include <cppcms/application.h>  
 #include <cppcms/applications_pool.h>  
 #include <cppcms/service.h>  
