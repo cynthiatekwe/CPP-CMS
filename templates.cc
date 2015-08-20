@@ -1,9 +1,14 @@
 /*
 This file contains code for the templates  cppcms tutorial with
-bootstrap integration. It creates a well styled page using 
-bootstrap class styles.
+bootstrap integration. This tutorial contains 3 files: the content.h
+file which contains values we will be rendering in the views, the temp.tmpl 
+file which contains a mixture of C++ and HTML code and is compiled into a
+c++ view, and finally we have our main application file which contains 
+webapp that runs on port 9002.
+The content.h file can be regarded as our models in conjunction with the MVC
+development pattern.
 
-    @file : templates.cc
+    @files : templates.cc, temp.tmpl,content.h
     @Author : Delveri Munang
     @Date   : August 2015
 */
