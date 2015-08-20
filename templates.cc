@@ -29,7 +29,7 @@ public:
 void tmp::main(std::string ref)  
 {  
     content::message c;  
-    c.text=">>>Hello<<<"; 
+    c.text="Chick"; 
     c.author="Dario"; 
     render("message",c);  
 } 
