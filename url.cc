@@ -26,7 +26,7 @@ public:
 
 	}
 
-			
+
 		void number(std::string num)  
 		{  
 		    int no = atoi(num.c_str());  
@@ -34,6 +34,11 @@ public:
 		    response().out() << "<a href='" << url("/") << "'>Go back</a>";  
 		} 
 
+		void smile()  
+			{  
+			    response().out() << ":-) <br/>\n";  
+			    response().out() << "<a href='" << url("/") << "'>Go back</a>";  
+			} 
 
 
 	virtual void main(std::string ref);
