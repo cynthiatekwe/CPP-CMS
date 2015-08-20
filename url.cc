@@ -7,3 +7,16 @@
 #include <iostream>  
 #include <stdlib.h>
 
+class urlex : public cppcms::application
+{
+public:
+	urlex(cppcms::service &srv) : cppcms::application(srv){
+
+	}
+	~urlex();
+
+	virtual void main(std::string ref);
+	
+};
+
+
