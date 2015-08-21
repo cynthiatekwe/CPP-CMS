@@ -31,7 +31,7 @@ public:
 	dispatcher().assign("/odd", &urlmain::odd, this);
 	mapper().assign("odd","/odd");
 
-/*
+
 	dispatcher().assign("",&urlmain::all,this);  
     mapper().assign("");  
   
@@ -42,7 +42,7 @@ public:
     mapper().assign("even","/even");  
   
     dispatcher().assign("/prime",&urlmain::prime,this);  
-    mapper().assign("prime","/prime"); */
+    mapper().assign("prime","/prime"); 
 
 	virtual void main(std::string ref);
 };
