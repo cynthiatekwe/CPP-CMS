@@ -1,7 +1,7 @@
 {  
     "service" : {  
         "api" : "http",  
-        "port" : 9003
+        "port" : 8000
     },  
     "http" : {  
         "script_names" : [ "/test"]  
