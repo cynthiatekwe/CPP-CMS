@@ -55,7 +55,7 @@ int main(int argc, char **argv){
 		cppcms::service srv(argc,argv);
 		srv.applications_pool().mount(applications_factory<urlexample>());
 		srv.run();
-		}catch(std::exception ex){
+		}catch(std::exception const &ex){
 			std::cout << "ERROR OCCURED\n" << ec.what() << std::endl;
 		}	
 
