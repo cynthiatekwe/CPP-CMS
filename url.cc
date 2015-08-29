@@ -48,17 +48,17 @@ public:
 };
 
 
-int main(int argc, char **argv){
-	std::cout << "\n\nServr Running at 127.0.0.1:8085" << std::endl;
+int main(int argc,char ** argv)  
+{  
+	std::cout << "Server running at 127.0.0.1:9000....." << std::endl;
+    try {  
+        cppcms::service srv(argc,argv);
+        srv.applications_pool().mount(cppcms::applications_factory<hello>()); 
 
-	try{
-		cppcms::service srv(argc,argv);
-		srv.applications_pool().mount(applications_factory<urlexample>());
-		srv.run();
-		}catch(std::exception const &ex){
-			std::cout << "ERROR OCCURED\n" << ec.what() << std::endl;
-		}	
-
-
+    srv.run();  
+}  
+catch(std::exception const &e) {  
+    std::cerr << e.what() << std::endl;  
+}
 
 }
