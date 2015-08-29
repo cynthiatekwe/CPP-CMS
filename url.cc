@@ -24,4 +24,41 @@ public:
 		mapper().root("/urlexample");
 
 	}
+
+	/*Url functions*/
+
+	void number(std::string num){
+		int no = atoi(num.c_str());
+		response().out() << "The Number is " << no << "<br/>\n";
+		response().out() << " <a href='" << url("/") << "' > Go Back";
+	}
+
+	void smile(){
+	response().out() << ":-) <br/>\n";  
+    response().out() << "<a href='" << url("/") << "'>Go back</a>";  
+	}
+
+	void welcome(){
+		 response().out() <<  
+        "<h1> Welcome To Page with links </h1>\n"  
+        "<a href='" << url("/number",1)  << "'>1</a><br>\n"  
+        "<a href='" << url("/number",15) << "'>15</a><br>\n"  
+        "<a href='" << url("/smile") << "' >:-)</a><br>\n"; 
+	}
 };
+
+
+int main(int argc, char **argv){
+	std::cout << "\n\nServr Running at 127.0.0.1:8085" << std::endl;
+
+	try{
+		cppcms::service srv(argc,argv);
+		srv.applications_pool().mount(applications_factory<urlexample>());
+		srv.run();
+		}catch(std::exception ex){
+			std::cout << "ERROR OCCURED\n" << ec.what() << std::endl;
+		}	
+
+
+
+}
