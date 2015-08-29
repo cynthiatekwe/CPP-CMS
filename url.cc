@@ -7,4 +7,9 @@
 #include <iostream>  
 #include <stdlib.h>
 
-
+class urlexample : cppcms::application{
+public:
+	urlexample(cppcms::service &srv):cppcms::application(srv){
+		
+	}
+};
