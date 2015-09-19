@@ -11,3 +11,4 @@ MainWindow w;
 w.show();
 
 return a.exec();
+}
