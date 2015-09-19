@@ -5,7 +5,7 @@ do
     name=$line
     echo "$name" >> debug.cxx
     git add .
-    git commit -m "ngRoute DEV-Route Added Commits"
+    git commit -m "CPP-CMS DEV Added Commits"
     # $COUNTER = $COUNTER+1
     git push origin master
 done < "$filename"
