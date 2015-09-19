@@ -13,3 +13,4 @@ w.show();
 return a.exec();
 }
 #include "mainwindow.h"
+#include <QApplication>
